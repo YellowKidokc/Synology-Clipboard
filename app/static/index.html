@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ClipHub</title><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <aside>
+    <div class="brand"><span>◆</span> ClipHub</div>
+    <p class="eyebrow">WORKSPACE</p>
+    <nav>
+      <button class="active" data-view="inbox">⌁ <span>Inbox</span></button>
+      <button data-view="archive">▣ <span>Archive</span></button>
+      <button data-view="prompts">✦ <span>Prompts</span></button>
+      <button data-view="composer">＋ <span>Composer</span></button>
+    </nav>
+    <div class="storage"><b>Synology storage</b><span><i></i> Connected</span><small>Persistent archive at /data</small></div>
+  </aside>
+  <main>
+    <header><div><p class="eyebrow">YOUR WORKING MEMORY</p><h1 id="title">Clipboard Inbox</h1></div><button class="primary" id="newClip">+ New clip</button></header>
+    <section class="toolbar"><input id="search" placeholder="Search content, tags, or source…"><span id="count">0 items</span></section>
+    <section id="clipView"><div id="clips" class="grid"></div><div id="empty" class="empty"><b>Your inbox is clear</b><span>Copy from the Windows helper or add a clip to begin.</span></div></section>
+    <section id="composerView" hidden>
+      <div class="composer-panel"><h2>Compose clips</h2><p>Select clips in the inbox, then choose how to assemble them.</p><div class="row"><select id="mode"><option value="plain">Clean paragraphs</option><option value="bullets">Markdown bullets</option><option value="quote">Block quotes</option><option value="json">JSON array</option></select><button class="primary" id="combine">Combine selected</button></div><textarea id="result" placeholder="Your combined clips will appear here"></textarea><button id="copyResult">Copy result</button></div>
+    </section>
+  </main>
+  <dialog id="clipDialog"><form method="dialog"><h2>Capture a clip</h2><label>Title<input id="clipTitle" placeholder="Optional title"></label><label>Content<textarea id="clipContent" required placeholder="Paste text here…"></textarea></label><label>Tags<input id="clipTags" placeholder="research, project"></label><div class="dialog-actions"><button value="cancel">Cancel</button><button class="primary" value="default" id="saveClip">Save clip</button></div></form></dialog>
+  <script src="/app.js"></script>
+</body></html>
+
