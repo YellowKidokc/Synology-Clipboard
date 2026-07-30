@@ -1,0 +1,2 @@
+"""ClipHub Synology service."""
+
