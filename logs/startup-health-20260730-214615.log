@@ -1,0 +1,17 @@
+Windows startup health check - 2026-07-30T21:46:15
+Fix mode: False
+[OK] Windows Event Log - Running
+[OK] Task Scheduler - Running
+[OK] Microsoft Defender - Running
+[OK] DHCP Client - Running
+[OK] DNS Client - Running
+[WARN] Network Location Awareness - Not running: Stopped
+[OK] Windows Audio - Running
+[OK] Wi-Fi WLAN AutoConfig - Running
+[OK] Bluetooth Support - Running
+[WARN] Synology Drive Client - No matching process found: SynologyDrive, Synology Drive Client
+[OK] AutoHotkey - Process running: AutoHotkey64
+[WARN] AI-HUB startup shortcut - Missing: C:\Users\David\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\AI-HUB.lnk
+[OK] Synology startup shortcut - Found: C:\Users\David\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Synology Drive Client.lnk
+[OK] Window router hotkeys shortcut - Found: C:\Users\David\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\WindowRouterHotkeys.lnk
+[INFO] ClipHub HTTP health - Skipped. Set CLIPHUB_HEALTH_URL or pass -ClipHubHealthUrl.
